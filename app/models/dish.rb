@@ -9,6 +9,10 @@ class Dish < ApplicationRecord
 
   # Indirect associations
 
+  has_many   :users,
+             :through => :bookmarks,
+             :source => :user
+
   # Validations
 
   validates :name, :uniqueness => true
