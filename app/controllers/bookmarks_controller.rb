@@ -78,7 +78,7 @@ class BookmarksController < ApplicationController
     @bookmark = Bookmark.find(params.fetch("id_to_modify"))
 
     @bookmark.venue_id = params.fetch("venue_id")
-    @bookmark.user_id = params.fetch("user_id")
+    
     @bookmark.dish_id = params.fetch("dish_id")
     @bookmark.notes = params.fetch("notes")
 
