@@ -4,21 +4,15 @@
 
 <hr>
 
-<!-- Form cuisine start -->
 <form action="/update_cuisine/<%= @cuisine.id %>" method="post">
-<!-- Form cuisine end -->
 
-  <!-- Label and input for name start -->
   <div class="form-group">
     <label for="name">
       Name
     </label>
 
-    <!-- Input for name start -->
     <textarea id="name" name="name" class="form-control" rows="3"><%= @cuisine.name %></textarea>
-    <!-- Input for name end -->
   </div>
-  <!-- Label and input for name end -->
 
   <button class="btn btn-block btn-outline-secondary">
     Update cuisine
